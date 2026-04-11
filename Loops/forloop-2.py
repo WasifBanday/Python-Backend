@@ -3,4 +3,4 @@
 current_population=10000
 for i in range(10,0,-1):
     print(i,'th:-' , current_population)
-    current_population=current_population-0.1*current_population
+    current_population=current_population/1.1
