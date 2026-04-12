@@ -1,4 +1,5 @@
-# Common functions of string
+# Common functions of string , these functions can be use with all the other data types as well , like tuples , dict , set etc
+
 # 1-len : Gives length of a string
 print(len('Hey man , how are you'))
 
