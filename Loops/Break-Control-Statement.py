@@ -1,5 +1,5 @@
-# 1--- Break 
-# Linear searching is an example of break  
+# 1--- Break  : Used to break the loop if some perticuler condition hits
+# Usage :-  Linear searching is an example of break  
 for i in range(1,11):
     if i==5:
         break
