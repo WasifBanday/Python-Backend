@@ -17,5 +17,5 @@ print(L2[3][1])  # 10 , will be printed because its in the 4th item of a list wh
 # 3D
 L3=[[[1,2],[3,4]],[[5,6],[7,8]]]
 # print 7 
-print(L3[1][1][0])
+print(L3[1][1][0]) # Means :- Dusre 2D list mai , dusre 1D list ka pehla wala item 
 
