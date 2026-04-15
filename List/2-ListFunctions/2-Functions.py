@@ -21,7 +21,8 @@ print(L3)
 # copy : creates copy of list in the memory 
 L4=[1,2,4,6,8,3,4]
 print(L4)
-print(id(L4))
+print(id(L4))  # id() : prints memory address
+
 L5=L4.copy()
 print(L5)
 print(id(L5))
