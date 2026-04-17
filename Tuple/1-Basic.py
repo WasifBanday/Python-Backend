@@ -4,6 +4,7 @@
 # 1.Ordered
 # 2.Unchangeable 
 # 3. Allow Duplicates 
+# ( We will only do those things which are different in tuple from list otherwise its same as list )
 
 # Creating Tuple 
 # Empty Tuple 
