@@ -6,6 +6,14 @@
 # 3. Allow Duplicates 
 # ( We will only do those things which are different in tuple from list otherwise its same as list )
 
+# Difference between Tuple and list 
+# 1.Syntax is different 
+# 2.Mutability (Tuples are immutable)
+# 3.Speed(Tuple are faster)
+# 4.Memory ( TUples take less memory)
+# 5.build in functions :- List have more buildin functions
+
+
 # Creating Tuple 
 # Empty Tuple 
 T1=()
