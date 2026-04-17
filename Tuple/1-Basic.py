@@ -35,5 +35,5 @@ T5=(1,2,3,(123,234,345))
 print(T5)
 
 # Using Type Conversion 
-T6=tuple('hello')
+T6=tuple(['hello'])
 print(T6)
