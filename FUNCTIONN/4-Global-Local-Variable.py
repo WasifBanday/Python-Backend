@@ -10,13 +10,13 @@ print(x)
 
 
 #   2
-def g(y):
+def g():
     # a=2
     print(x) # Local can access global variable
     # x=x+1 # This is not allowed because we can use global variable but can't change it 
     print(x+1)
 x=5
-g(x)
+g()
 print(x)
 # print(a) # Global can't access Local variable 
 
