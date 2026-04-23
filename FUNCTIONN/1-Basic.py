@@ -16,3 +16,6 @@ for i in range(1,11):
     print(x)
 x=is_even('hello')
 print(x)
+
+# We can print the documentation as well 
+print(is_even.__doc__)
