@@ -1,4 +1,9 @@
+# Creating a function (with docstring)
 def is_even(num):
+    """
+    Thiss functio returns if the given number is Even or Odd
+    Input - Any valid int , number
+    """
     if type(num) == int:
         if num % 2 ==0 :
             return 'Even'
