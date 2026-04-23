@@ -14,3 +14,5 @@ def is_even(num):
 for i in range(1,11):
     x=is_even(i)
     print(x)
+x=is_even('hello')
+print(x)
