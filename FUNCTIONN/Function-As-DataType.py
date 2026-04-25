@@ -1,4 +1,5 @@
 # Function in python is a data type (like :- other data types int,list,set,dictionery etc)
+
 # Type and id 
 def square (num):
     return num**2
@@ -34,3 +35,8 @@ def func_b(z):
     print('inside func_b')
     return z()
 print(func_b(func_a))
+
+# Benefits of using a function 
+#   1- Code Modularity
+#   2- Code Readibality
+#   3- Code Reusability
