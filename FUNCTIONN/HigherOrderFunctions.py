@@ -6,4 +6,4 @@ def transform (f,l):
         output.append(f(i))
     print(output)
 l=[1,2,3,4,5]
-transform(lambda x : x**2 , l)
+transform(lambda x : x**2 , l)  # This is equal to 'f' in def function .
