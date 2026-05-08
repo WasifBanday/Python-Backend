@@ -2,11 +2,13 @@
 # We can create our own data-types by OOP 
 # Class is a blueprint , which tells us how will its object behaive 
 #  [ Object is an instance of class ]
+# The functions created inside class , these are called methods ... 
 
 # Lets create an ATM Mechanism or Mechine 
 
 
 class Atm :
+    # Constructor : ( Special function )
     def __init__(self):
         self.pin = ''
         self.balance = 10000   # Lets set this as default .
@@ -35,6 +37,7 @@ class Atm :
         self.pin=user_pin
         print('pin created successfully')
         self.menu()
+        
     def change_pin(self) :
       if self.pin !='':
         old_pin=input('Enter old pin : ')
@@ -49,6 +52,7 @@ class Atm :
       else :
         print("Please create pin first")
         self.create_pin()
+        
     def check_balance(self) :
       if self.pin !='':        
         user_pin = input ('Enter your pin : ')
@@ -61,6 +65,7 @@ class Atm :
       else :
         print("Please create pin first")
         self.create_pin()
+        
     def withdraw(self) :
       if self.pin !='':        
         user_pin = input("Enter your pin : ")
