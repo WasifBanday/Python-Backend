@@ -17,7 +17,7 @@ class Atm :
         2.Press 2 to change pin 
         3.Press 3 to check balance 
         4.Press 4 to withdraw
-        5.Anything else to exit 
+        5.Anything else to cancel 
         """
         ) 
         if user_input=='1':
@@ -29,13 +29,14 @@ class Atm :
         elif user_input=='4' :
             self.withdraw()
         else :
-            exit()
+            print('Thanks for using this ATM')
     def create_pin(self):
         user_pin=input('Enter pin : ')
         self.pin=user_pin
         print('pin created successfully')
         self.menu()
     def change_pin(self) :
+      if self.pin !='':
         old_pin=input('Enter old pin : ')
         if old_pin==self.pin:
             new_pin=input('Enter new pin : ')
@@ -45,7 +46,11 @@ class Atm :
         else :
             print('wrong pin , try again')
             self.menu()
+      else :
+        print("Please create pin first")
+        self.create_pin()
     def check_balance(self) :
+      if self.pin !='':        
         user_pin = input ('Enter your pin : ')
         if user_pin == self.pin :
             print("Your balance is :- " , self.balance)
@@ -53,7 +58,11 @@ class Atm :
         else :
             print("Wrong pin , try again")
             self.menu()
+      else :
+        print("Please create pin first")
+        self.create_pin()
     def withdraw(self) :
+      if self.pin !='':        
         user_pin = input("Enter your pin : ")
         if user_pin==self.pin :
             # Allow withdraw
@@ -68,5 +77,9 @@ class Atm :
         else :
             print(" Wrong pin please try again ")
             self.menu()
+      else :
+        print("Please create pin first")
+        self.create_pin()
+      
 obj=Atm()   #  Actually building the ATM  from blueprint
 obj.menu()  #  Turning it on 
