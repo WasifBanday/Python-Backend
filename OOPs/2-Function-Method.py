@@ -1,5 +1,5 @@
 # Difference between function and method 
-# If the function is inside class its called as method , but if its outside its called as function 
+# IN PYTHON :- If the function is inside class its called as method , but if its outside its called as function 
 l=[1,2,3,4]
 
 print(len(l)) # len is a function , bcoz its outside the class
