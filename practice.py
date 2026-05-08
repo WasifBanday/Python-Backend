@@ -1,66 +1,49 @@
-class ATM:
-    def __init__(self):
-        self.pin = ''
-        self.balance = 0
+# # n = int(input("Enter n "))
+# # result=0
+# # for i in range(0,n+1):
+# #     result=result+i
+# # print(result)
+# # n = int (input('Enter n :- '))
+# # for i in range(1,n+1):
+# #     for j in range(1,i+2):
+# #         for k in range(1,j+1):
+# #             print(k,end='')
+# #         print()
+# #     print()
+# import functools
+# names = ["wasif","ali","ahmad"]
+# l=list(map(lambda names:names.upper(),names))
+# print(l)
 
-    def menu(self):
-        user_input = input("""
-        1. Press 1 to create pin 
-        2. Press 2 to change pin 
-        3. Press 3 to check balance 
-        4. Press 4 to withdraw
-        5. Anything else to exit 
-        """)
-        if user_input == '1':
-            self.create_pin()
-        elif user_input == '2':
-            self.change_pin()
-        elif user_input == '3':
-            self.check_balance()        # ✅ Fixed typo
-        elif user_input == '4':
-            self.withdraw()
-        else:
-            exit()
+# nums = [1,2,3,4]
+# print(functools.reduce(lambda x,y: x*y,nums))
 
-    def create_pin(self):
-        self.pin = input('Enter your pin: ')    # ✅ Store as str, no int()
-        print('Pin created successfully')
-        self.menu()
+class Atm:
 
-    def change_pin(self):
-        old_pin = input('Enter your old pin: ')
-        if old_pin == self.pin:                 # ✅ Both are str now
-            self.pin = input('Enter new pin: ')
-            print('Pin changed successfully')
-            self.menu()
-        else:
-            print('Wrong pin, try again')
-            self.menu()
+  # constructor(special function)->superpower -> 
+  def __init__(self):
+    print(id(self))
+    self.pin = ''
+    self.balance = 0
+    #self.menu()
 
-    def check_balance(self):
-        user_pin = input('Enter your pin: ')
-        if user_pin == self.pin:                # ✅ Both are str now
-            print("Your balance is:", self.balance)
-            self.menu()
-        else:
-            print("Wrong pin, try again")
-            self.menu()
+  def menu(self):
+    user_input = input("""
+    Hi how can I help you?
+    1. Press 1 to create pin
+    2. Press 2 to change pin
+    3. Press 3 to check balance
+    4. Press 4 to withdraw
+    5. Anything else to exit
+    """)
 
-    def withdraw(self):
-        user_pin = input("Enter your pin: ")
-        if user_pin == self.pin:
-            amount = int(input("Enter amount: "))   # ✅ Convert to int for comparison
-            if amount <= self.balance:
-                self.balance -= amount
-                print("Withdrawal successful, please take your cash")
-                print("Your balance is:", self.balance)
-            else:
-                print("Insufficient funds in your account")
-            self.menu()
-        else:
-            print("Wrong pin, please try again")
-            self.menu()
-
-
-obj = ATM()
-obj.menu()
+    if user_input == '1':
+      self.create_pin()
+    elif user_input == '2':
+      self.change_pin()
+    elif user_input == '3':
+      self.check_balance()
+    elif user_input == '4':
+      self.withdraw()
+    else:
+      exit()
