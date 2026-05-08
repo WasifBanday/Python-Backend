@@ -31,7 +31,7 @@ class Atm :
         else :
             exit()
     def create_pin(self):
-        user_pin=input('Enter your pin : ')
+        user_pin=input('Enter pin : ')
         self.pin=user_pin
         print('pin created successfully')
         self.menu()
