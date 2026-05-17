@@ -16,9 +16,15 @@ class point :
 # p=point(1,1)
 # print(p)
 
-# 2: distance formula between two coordinates = ((x2​−x1​)**2 + (y2​−y1​)**2 ) ** 0.5 
+# 2: Distance formula between two coordinates = ((x2​−x1​)**2 + (y2​−y1​)**2 ) ** 0.5 
     def euclidean_distance(self,other):
         return ((self.x_cod-other.x_cod)**2 + (self.y_cod-other.y_cod)**2) ** 0.5
-p1=point(0,0)
-p2=point(10,10)
-print(p1.euclidean_distance(p2))
+# p1=point(0,0)
+# p2=point(10,10)
+# print(p1.euclidean_distance(p2))
+
+# 3: Distance formula from origin to point  d=( x2+y2 ) ** 0.5 
+    def distance_from_origin(self):
+        return (self.x_cod**2 + self.y_cod**2)** 0.5
+p=point(0,0)
+print(p.distance_from_origin())
