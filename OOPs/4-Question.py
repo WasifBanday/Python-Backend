@@ -7,11 +7,11 @@
 
 # 1: 
 class point :
-    def __init__(self,x,y):
+    def __init__(self,x,y): # create
         self.x_cod=x
         self.y_cod=y
         
-    def __str__(self):
+    def __str__(self):  # View
         return '<{},{}>'.format(self.x_cod,self.y_cod)
 # p=point(1,1)
 # print(p)
@@ -28,3 +28,23 @@ class point :
         return (self.x_cod**2 + self.y_cod**2)** 0.5
 p=point(0,0)
 print(p.distance_from_origin())
+
+# 4: Creating new class for checking if the point lies on a plane or not
+class Line:
+    def __init__(self,A,B,C):
+        self.A=A
+        self.B=B
+        self.C=C
+    def __str__(self):
+        return '{}x + {}y + {} = 0'.format(self.A, self.B, self.C)
+    def point_on_line(Line,point):
+        if Line.A * point.x_cod + Line.B * point.y_cod + Line.C == 0 :
+            return 'Point lies on the line'
+        else :
+            return 'Does not lies on line'
+    
+L1=Line(1,1,-2)
+P1=point(1,2)
+print(L1)
+print(P1)
+print(L1.point_on_line(P1))
