@@ -1,9 +1,4 @@
-# Write OOP classes to handle the following scenarios:
-#   1: A user can create and view 2D coordinates
-#   2: A user can find out the distance between 2 coordinates
-#   3: A user can find find the distance of a coordinate from origin
-#   4: A user can check if a point lies on a given line
-#   5: A user can find the distance between a given 2D point and a given line 
+
 
 # 1: 
 class point :
@@ -52,6 +47,6 @@ class Line:
 # 5: Formula for shortest distance between line and point   | Ax + By + C | / (A**2 + B**2) ** 0.5 
     def shortest_distance(Line,point):
         return abs(Line.A * point.x_cod + Line.B * point.y_cod + Line.C) / (Line.A**2 + Line.B**2) ** 0.5
-L1=Line(1,1,2)
-p1=point(1,1)
-print(L1.shortest_distance(p1))
+# L1=Line(1,1,2)
+# p1=point(1,1)
+# print(L1.shortest_distance(p1))
