@@ -5,7 +5,7 @@ def is_even(num):
     Input - Any valid int , number
     """
     if type(num) == int:
-        if num % 2 ==0 :
+        if num % 2 == 0 :
             return 'Even'
         else :
             return 'Odd'
@@ -14,8 +14,8 @@ def is_even(num):
 for i in range(1,11):
     x=is_even(i)
     print(x)
-x=is_even('hello')
-print(x)
+# x=is_even('hello')
+# print(x)
 
 # We can print the documentation as well 
-print(is_even.__doc__)
+# print(is_even.__doc__)
