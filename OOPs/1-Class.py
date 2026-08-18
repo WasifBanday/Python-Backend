@@ -2,7 +2,7 @@
 # We can create our own data-types by OOP 
 # Class is a blueprint , which tells us how will its object behaive 
 #  [ Object is an instance of class ]
-# The functions created inside class, are called methods .. 
+# The functions created inside class, are called methods .. ``
 
 # Lets create an ATM Mechanism or Mechine 
 
