@@ -1,5 +1,6 @@
 # Reduce function ( import module to use it )
 # It works on 2 items at a time 
+# Take two → produce one result → take that result with the next → repeat.
 import functools
 
 # Example - Sum of all items 
