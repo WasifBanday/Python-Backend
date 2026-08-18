@@ -6,7 +6,7 @@ print(len('Hey man , how are you'))
 # 2-max : Gives the alphabet which has highest "ASCII" value
 print(max('Hey man , how are you'))
 
-# 3-min : Gives the alphabet which has lowest "ASCII" value
+# 3-min : Gives the alphabet which has lowest "ASCII" value {i,e :- blank space }
 print(min('Hey man , how are you'))
 
 # 4-sorted : It sorts the array in accending order , basis of their ASCII values  {spaces has the least ASCII value}
