@@ -14,4 +14,4 @@ elif email=='wasifahmad@gmail.com' and password !='1234':
     else:
         print('Nahi bhai , Password ptah krke ahh')
 else:
-    print('Incorrect email and password')
+    print('Incorrect email or password')
