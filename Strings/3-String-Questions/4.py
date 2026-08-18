@@ -3,12 +3,12 @@
 
 s=input('Enter string :- ')
 term=input('What would you like to remove :- ')
-newS=''
+newStr=''
 for i in s:
     if i == term:
         continue
     else:
-        newS=newS+i
+        newStr=newStr+i
     
 else:
-    print(newS)
+    print(newStr)

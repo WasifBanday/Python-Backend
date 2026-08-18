@@ -1,4 +1,4 @@
-# WAP that can check weather a string is palindrome or not
+# WAP that can check weather a string is palindrome or not { palindrome: means reverse and front are same spelling }
 # '/'  --> Normal division   [7/2 = 3.5]
 # '//'  --> Integer division [7/2 = 3]
 
