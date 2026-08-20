@@ -7,7 +7,7 @@ class customer :
         self.address=address
         
     def print_address(self):
-        print(self.address.get_city(),self.address.pin,self.address.state)
+        print(self.name,self.address.get_city(),self.address.pin,self.address.state)
         
     def edit_profile(self,new_name,new_city,new_pin,new_state):
         self.name=new_name
