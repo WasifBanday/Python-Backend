@@ -1,4 +1,4 @@
-# lets now edit address, and name of the customer 
+# let's now edit address, and name of the customer
 
 class customer :
     def __init__(self,name,gender,address):
