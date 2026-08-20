@@ -6,7 +6,7 @@ class person :
     def __init__(self,age):
         self.age=age
     def get_age(self):
-        return self.__age
+        return self.__age  # We hide things here by using double underscore(__) in front of our variable or method 
     def set_age(self,age):
         if age>=0:
             self.__age=age
