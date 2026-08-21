@@ -1,7 +1,7 @@
-# Aggregation :- It's actually a class relationship type [like, inheritance]
+# Aggregation : It's actually a class relationship type [like, inheritance]
 # Aggregation : When two classes have a ("has a") relationship
 # Aggregation : One class owns the other class 
-# example :- customer has a address {here : 'has a' is relation} 
+# example     : customer has a address {here : 'has a' is relation} 
 
 # Now code example :
 class customer :
