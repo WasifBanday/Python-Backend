@@ -6,7 +6,7 @@ class Phone:
         self.__price=price
         self.brand=brand
         self.camera=camera
-    def show(self):
+    def __show(self):
         print(self.__price)
 
 class SmartPhone(Phone):  # child with constructor
@@ -14,4 +14,5 @@ class SmartPhone(Phone):  # child with constructor
         print(self.__price)    
 s=SmartPhone(20000,'apple',15)
 print(s.brand)
-# print(s.__price)  # This won't get printed because it's private ... 
+s.__show()  # This member won't get printed because it's private ...
+# print(s.__price)  # This attribute won't get printed because it's private ... 
