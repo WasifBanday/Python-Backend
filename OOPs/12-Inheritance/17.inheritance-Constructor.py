@@ -3,7 +3,7 @@ class parent :
     def __init__(self,num):
         self.num=num
     
-    def get_num(self):
+    def get_num(self):  # this will not work because parents constuctor never got called because child has its own constuctor so, its value(num) never instialized
         return self.num
 
 class Child(parent):
