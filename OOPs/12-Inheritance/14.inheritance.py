@@ -1,4 +1,5 @@
 # Constructor Example : 2  ( child with constructor )
+# * when child have a constructor then parents constructor not gets called * 
 
 class Phone:
     def __init__(self,price,brand,camera):

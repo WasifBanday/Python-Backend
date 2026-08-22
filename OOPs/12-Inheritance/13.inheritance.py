@@ -1,5 +1,5 @@
 # What gets inherited are [ constructor,Non-private attribute and Non-private method ]
-
+# * If child does not have a constructor then parents constructor gets called * 
 # Constructor Example : 1  ( child without constructor )
 class Phone:
     def __init__(self,price,brand,camera):
