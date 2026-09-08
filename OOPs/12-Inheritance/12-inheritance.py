@@ -1,4 +1,4 @@
-# One class {child class} can resue the data and behavior of other class {parent class} instead of writing everything again 
+# One class {child class} can reuse the data and behavior of other class {parent class} instead of writing everything again 
 
 # parent class
 class User:
