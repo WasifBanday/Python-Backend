@@ -1,6 +1,6 @@
 # Firstly there is nothing truely private in python .
 # ENCAPSULATION :--  “Keep the data protected inside the class and provide controlled ways to access it.”
-# Encapsulation : Bundling data and the methods that operate on in inside a class, while controlling how that data can be accessed or modified 
+# Encapsulation : Bundling data and the methods that operates on inside a class, while controlling how that data can be accessed or modified 
 # * Keep the data inside the class and control access to it throuh methods like getter and setter *
 
 class person :
